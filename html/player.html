@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>rensyu_television player</title>
+<link rel="stylesheet" href="player.css">
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+</head>
+<body>
+  <div id="stage"></div>
+
+  <div id="nosignal" class="hidden">
+    <div class="bars"></div>
+    <div class="ns-text"><span id="ns-title">NO SIGNAL</span><small id="ns-sub"></small></div>
+  </div>
+
+  <div id="overlay" class="hidden"><b id="ov-num"></b><span id="ov-label"></span></div>
+  <div id="banner" class="hidden"></div>
+  <div id="error" class="hidden"></div>
+
+  <script src="player.js"></script>
+</body>
+</html>

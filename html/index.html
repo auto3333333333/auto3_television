@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>rensyu_television</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Tablet (TV remote / boombox) -->
+<div id="qs" class="tb-backdrop hide">
+  <div class="tablet" id="tablet">
+    <div class="tb-cam"></div>
+    <div class="tb-screen">
+      <div class="safearea">
+        <span id="sb-clock">--:--</span>
+        <span class="sbi" id="sb-icons"></span>
+      </div>
+      <div class="shell">
+        <div class="sbslot">
+          <nav class="sb" id="sb">
+            <div class="sb-logo">
+              <div class="sb-logoimg" id="sb-logo"></div>
+              <span class="sb-label" id="sb-app"></span>
+            </div>
+            <div class="sb-nav" id="sb-nav"></div>
+          </nav>
+        </div>
+        <div class="main">
+          <div class="pagehead">
+            <div class="ph-title" id="ph-title"></div>
+            <div class="ph-right">
+              <div class="who"><b id="ph-nm"></b><span id="ph-sub"></span></div>
+              <button class="btn ghost sm ph-x" id="ph-close"></button>
+            </div>
+          </div>
+          <div class="content" id="content">
+            <div id="view-tv" class="hide"></div>
+            <div id="view-bx" class="hide"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Interact (windowed mouse control) -->
+<div id="browse" class="hide">
+  <div id="surface"></div>
+  <button class="btn danger b-x" id="b-x"></button>
+  <div id="bar">
+    <div class="searchbox"><input id="b-url" type="text" autocomplete="off"></div>
+    <button class="btn" id="b-go"></button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
